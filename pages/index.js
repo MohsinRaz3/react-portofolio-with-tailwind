@@ -2,7 +2,8 @@ import Head from "next/head";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube, AiFillGithub
+  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -51,25 +52,53 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Mohsin Raz 
+              Mohsin Raz
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Web3 & Blockchain Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Web3 Developer providing services for NFTs and Blockchain proficient in Python & Javascript languages. Help NFT community to launch their collection successfully, as I've passion for NFTs I don't compromise in quality and build a good relationships with clients. My work has earned a very positive response, strictly follow deadlines. I hope my services will be able to add value to your projects. Let's break into nfts together!! 
+              Web3 Developer providing services for NFTs and Blockchain
+              proficient in Python & Javascript languages. Help NFT community to
+              launch their collection successfully, as I've passion for NFTs I
+              don't compromise in quality and build a good relationships with
+              clients. My work has earned a very positive response, strictly
+              follow deadlines. I hope my services will be able to add value to
+              your projects. Let's break into nfts together!!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-             <button> <a href="https://twitter.com/MohsinRaz_" target="_blanks"> <AiFillTwitterCircle /></a></button>
-             <button> <a href="https://www.linkedin.com/in/mohsinraz/" target="_blanks"> <AiFillLinkedin /></a></button>
-             <button> <a href="https://www.youtube.com/@mohsinraz" target="_blanks"><AiFillYoutube /> </a></button>
-             <button> <a href="https://github.com/MohsinRaz3" target="_blanks"><AiFillGithub /> </a></button>
-
- 
-              
+              <button>
+                {" "}
+                <a href="https://twitter.com/MohsinRaz_" target="_blanks">
+                  {" "}
+                  <AiFillTwitterCircle />
+                </a>
+              </button>
+              <button>
+                {" "}
+                <a
+                  href="https://www.linkedin.com/in/mohsinraz/"
+                  target="_blanks"
+                >
+                  {" "}
+                  <AiFillLinkedin />
+                </a>
+              </button>
+              <button>
+                {" "}
+                <a href="https://www.youtube.com/@mohsinraz" target="_blanks">
+                  <AiFillYoutube />{" "}
+                </a>
+              </button>
+              <button>
+                {" "}
+                <a href="https://github.com/MohsinRaz3" target="_blanks">
+                  <AiFillGithub />{" "}
+                </a>
+              </button>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={deved} layout="fill" objectFit="cover" alt={"dev"} />
             </div>
           </div>
         </section>
@@ -77,27 +106,31 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance web3 developer
-              , I've done remote work for
+              Since the beginning of my journey as a freelance web3 developer ,
+              I've done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including ERC721 Smart contract,
-              Liquidity Pool, ERC20 Token, Uniswap, Avee protocol, Ethereum DApp, Polygon, Binance SmartChain and NFT services.
+              I offer from a wide range of services, including ERC721 Smart
+              contract, Liquidity Pool, ERC20 Token, Uniswap, Avee protocol,
+              Ethereum DApp, Polygon, Binance SmartChain and NFT services.
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image
+                src={design}
+                width={100}
+                height={100}
+                alt={"NFT Generation"}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 NFT Collection Generation
               </h3>
-              <p className="py-2">
-                Generate ERC721 NFT collection.
-              </p>
+              <p className="py-2">Generate ERC721 NFT collection.</p>
               <h4 className="py-4 text-teal-600">What I Provide.</h4>
               <p className="text-gray-800 py-1">NFTs with metadata</p>
               <p className="text-gray-800 py-1">Fix Json files</p>
@@ -105,13 +138,18 @@ export default function Home() {
               <p className="text-gray-800 py-1">Free support</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                alt={"website development"}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 NFT Website Development
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great NFT website? Let's make it a
-                reality.
+                Do you have an idea for your next great NFT website? Let's make
+                it a reality.
               </p>
               <h4 className="py-4 text-teal-600">What you'll get.</h4>
               <p className="text-gray-800 py-1">NFT landing Page</p>
@@ -120,13 +158,23 @@ export default function Home() {
               <p className="text-gray-800 py-1">Responsive Design</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Smart Contract & Mint DApp</h3>
+              <Image
+                src={consulting}
+                width={100}
+                height={100}
+                alt={"contract development"}
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Smart Contract & Mint DApp
+              </h3>
               <p className="py-2">
-                Deploy your next ERC721A NFT smart contract on Ethereum Blockchain. 
+                Deploy your next ERC721A NFT smart contract on Ethereum
+                Blockchain.
               </p>
               <h4 className="py-4 text-teal-600">What you'll get.</h4>
-              <p className="text-gray-800 py-1">ERC721A gas optimized contract</p>
+              <p className="text-gray-800 py-1">
+                ERC721A gas optimized contract
+              </p>
               <p className="text-gray-800 py-1">Ethereum/Polygon Blockchain</p>
               <p className="text-gray-800 py-1">NFT Minting DApp</p>
               <p className="text-gray-800 py-1">Free support</p>
@@ -137,7 +185,14 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            A  blockchain developer who provides freelance services of NFT development and smart contract services, highly skilled professional with expertise in Web2 & Web3. As a freelancer I worked with variety of clients, from startups to established corporations, helping them to develop and deploy NFTs and smart contracts for a wide range of applications. Provide ongoing maintenance and support for these projects, ensuring that they are functioning correctly and securely. 
+              A blockchain developer who provides freelance services of NFT
+              development and smart contract services, highly skilled
+              professional with expertise in Web2 & Web3. As a freelancer I
+              worked with variety of clients, from startups to established
+              corporations, helping them to develop and deploy NFTs and smart
+              contracts for a wide range of applications. Provide ongoing
+              maintenance and support for these projects, ensuring that they are
+              functioning correctly and securely.
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
@@ -156,6 +211,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web1}
+                alt={"NFT webiste"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -165,6 +221,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web2}
+                alt={"NFT webiste"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -174,6 +231,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web3}
+                alt={"NFT webiste"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -183,6 +241,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web4}
+                alt={"NFT webiste"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -192,6 +251,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web5}
+                alt={"NFT webiste"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -201,6 +261,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web6}
+                alt={"NFT webiste"}
               />
             </div>
           </div>
