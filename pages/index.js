@@ -44,6 +44,7 @@ export default function Home() {
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
+                  aria-label="resume"
                 >
                   Resume
                 </a>
@@ -69,31 +70,46 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <button>
                 {" "}
-                <a href="https://twitter.com/MohsinRaz_" target="_blanks">
-                  {" "}
-                  <AiFillTwitterCircle />
+                <a
+                  href="https://twitter.com/MohsinRaz_"
+                  aria-label="Twitter"
+                  target="_blanks"
+                >
+                  <AiFillTwitterCircle /> <p className="text-sm">Twitter</p>
                 </a>
               </button>
               <button>
                 {" "}
                 <a
                   href="https://www.linkedin.com/in/mohsinraz/"
+                  aria-label="LinkedIn"
                   target="_blanks"
                 >
                   {" "}
                   <AiFillLinkedin />
+                  <p className="text-sm">LinkedIn</p>
                 </a>
               </button>
               <button>
                 {" "}
-                <a href="https://www.youtube.com/@mohsinraz" target="_blanks">
-                  <AiFillYoutube />{" "}
+                <a
+                  href="https://www.youtube.com/@mohsinraz"
+                  target="_blanks"
+                  aria-label="Youtube"
+                >
+                  <AiFillYoutube />
+                  <p className="text-sm">Youtube</p>
                 </a>
               </button>
               <button>
                 {" "}
-                <a href="https://github.com/MohsinRaz3" target="_blanks">
-                  <AiFillGithub />{" "}
+                <a
+                  href="https://github.com/MohsinRaz3"
+                  target="_blanks"
+                  aria-label="Github"
+                >
+                  <AiFillGithub />
+                  <p className="text-sm">Github</p>
                 </a>
               </button>
             </div>
